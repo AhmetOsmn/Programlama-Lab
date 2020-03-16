@@ -1,15 +1,23 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Mar  6 09:34:04 2020
 
-@author: Ahmet
-"""
 """
 event = istediğim olay
 space = olabilecek durumlar
 prime = asal sayılar
 """
 from sympy import FiniteSet
+from fractions import Fraction
+
+t = FiniteSet(1,2,3)
+s = FiniteSet(2,4,6)
+
+if t == s:
+    print("True")
+else:
+    print("False")
+
+print(t.union(s))
+print(t.intersect(s))
+print(t**2) 
 
 def probability(space,event): #Olabilirlik
     return len(event)/len(space)
@@ -33,22 +41,7 @@ for num in space:
     if  check_prime(num):
         primes.append(num)
     
-    event = FiniteSet(*primes)
-    p = probability(space,event)
-    print(p)
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+event = FiniteSet(*primes)
+p = probability(space,event)
+print(p)
     

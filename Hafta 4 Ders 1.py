@@ -31,7 +31,10 @@ get_hist(lst1)
 my_list = os.listdir()
 
 for item in my_list:
+    if os.path.isdir(item):
+        print(item)
     if os.path.isfile(item):
+        print(item)
 
 dir_s = [dir for dir in my_list if os.path.isdir(dir)]
 file_s = [file for file in my_list if os.path.isfile(file)]
