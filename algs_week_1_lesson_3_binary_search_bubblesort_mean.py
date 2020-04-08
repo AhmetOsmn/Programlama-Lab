@@ -87,12 +87,12 @@ def my_median(my_list):
     n = len(my_list_2)
     if(n%2 == 1):
         middle = int(n/2)+1
-        median = my_list_2[middle]
+        median = my_list_2[middle-1]
         #print(median)
     else:
-        middle_1 = my_list_2[int(n/2)]
-        middle_2 = my_list_2[int(n/2)+1]
-        median = (middle_1 + middle_2) / 2
+        middle_1 = int(n/2)-1
+        middle_2 = middle_1+1
+        median = (my_list_2[middle_1]+my_list_2[middle_2])/2ddle_2) / 2
         #print(median)
 
     return median
