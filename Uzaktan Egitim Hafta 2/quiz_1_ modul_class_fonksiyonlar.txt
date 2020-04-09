@@ -1,0 +1,24 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+from sympy import Symbol: Bir degiskeni sembol olarak kullanmamizi sagliyor.Uzerinde islem yaptigimizda degeri degismemis oluyor.
+from sympy import factor: Verilen ifadeyi carpanlarina ayiriyor.
+from sympy import expand: Verilen ifadenin acilimini yaziyor.
+from sympy import pprint: Kullandigimiz ifadeyi gunluk hayatimizdaki halinde gosteriyor.
+
+import sympy.plotting  as syp: Cizim modulunun sinifidir.
+import matplotlib.pyplot as plt: Matplotlib kutuphanisini kullanirken en cok kullanilan interfacelerden biri: plt'dir.
+%matplotlib inline: Kodumuzu notbook veya browser'da yazarken grafigi cizmek icin ayni pencerede acmamizi ve saklamamizi saglar.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+append(x): Listeye x' elemanini eklememizi saglar.
+evalf(): Sayisal bir ifadeyi kayan noktali sayi olarak degerlendirmek icin kullanilir.
+plt.plot(x_values,y_values): Grafigin ana komutunu olusturur.Bu komutun icine ilk once x ekseni,sonrasinda y ekseni yazilir.Grafikteki temel bazi degiskenleri degistirmek icin de kullanilir.
+plt.show(): Grafigi cizdirmemizi saglar.Bu kodu yazmazsak grafik çizilir fakat bazen ekranda gözükmeyebilir.
+                        x
+sy.exp: Ustel fonksiyon,e
+sym.sqrt(x): Girilen x tam kare degil ise x in karekokunu sembolik olarak yazdirir.(sym.sqrt(8) = 2√2)
+sympy.subs(x,y): Formulde x parametrelerinin yerine y parametresini yazar.
+syp.plot(fonksion_adi.subs({mu:deger,sigma:deger}),(x,baslangic_degeri,bitis_degeri),title='grafik basligi'): Belirtilen parametrelere uygun grafigi cizer.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
