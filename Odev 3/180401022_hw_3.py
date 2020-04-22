@@ -14,7 +14,7 @@ from sympy import Symbol,factorial
 from sympy import pprint
 import matplotlib.pyplot as plt
 import sympy as sy
-
+import sympy as sym
 
 
 def poisson_dist(l,x1,x2):
@@ -35,6 +35,7 @@ def poisson_dist(l,x1,x2):
         x_list.append(value)
         print("x Value: {} -- P(x): {}".format(value,y))
 
-    plt.plot(x_list,y_list)
-
-poisson_dist(10,0,20)
+    #plt.plot(x_list,y_list)
+    sym.plot(my_function.subs({llambda:l}),(x,x1,x2),title = 'poisson distribution')
+    
+poisson_dist(10,0,20) #(llambda,x1,x2)
